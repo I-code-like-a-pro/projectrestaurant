@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  /* Background Colors */
+  --color-dark-bg: #0a0a0a;
+  --color-card-bg: #171717;
+  --color-cream: #fdf8f0;
+  
+  /* Text Colors */
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #d4d4d4;
+  --color-text-muted: #a3a3a3;
+  
+  /* Gold Accents */
+  --color-gold: #f59e0b;
+  --color-gold-dark: #d97706;
+  
+  /* Border Colors */
+  --color-border-dark: #262626;
+  --color-border-light: #525252;
+  
+  /* Neutral Colors */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+  
+  /* Gradient Colors */
+  --color-cta-start: rgba(245, 158, 11, 0.1);
+  --color-cta-end: rgba(217, 119, 6, 0.1);
+
+  /* Text Colors */
+--foreground: oklch(0.145 0 0);
+--card-foreground: oklch(0.145 0 0);
+--popover-foreground: oklch(0.145 0 0);
+--primary-foreground: oklch(1 0 0);
+--secondary-foreground: #030213;
+--muted-foreground: #717182;
+--accent-foreground: #030213;
+--destructive-foreground: #ffffff;
+--sidebar-foreground: oklch(0.145 0 0);
+--sidebar-primary-foreground: oklch(0.985 0 0);
+--sidebar-accent-foreground: oklch(0.205 0 0);
+
+  /* Dark Mode Text Colors */
+--foreground: oklch(0.985 0 0);
+--card-foreground: oklch(0.985 0 0);
+--popover-foreground: oklch(0.985 0 0);
+--primary-foreground: oklch(0.205 0 0);
+--secondary-foreground: oklch(0.985 0 0);
+--muted-foreground: oklch(0.708 0 0);
+--accent-foreground: oklch(0.985 0 0);
+--destructive-foreground: oklch(0.637 0.237 25.331);
+--sidebar-foreground: oklch(0.985 0 0);
+--sidebar-primary-foreground: oklch(0.985 0 0);
+--sidebar-accent-foreground: oklch(0.985 0 0);
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .bg-gradient-cta {
+    background: linear-gradient(135deg, var(--color-cta-start), var(--color-cta-end));
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--color-text-primary), var(--color-text-muted));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    border-color: var(--color-gold);
+  }
+}
