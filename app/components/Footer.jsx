@@ -23,7 +23,7 @@ const Footer = () => {
             
           </div>
 
-          <div className="grdi grid-cols-1 ">
+          <div className="grid grid-cols-1 ">
             <div  className="text-gold text-lg">
               Contact
             </div>
@@ -35,6 +35,23 @@ const Footer = () => {
               Phone: (555) 123-4567
 
               Email: info@maisonetoile.com
+            </p>
+          </div>
+          <div>
+            <div className='text-gold text-lg'>
+              Hours
+            </div>
+            <p className='text-neutral-400'>
+              Tuesday - Thursday: 5:00 PM - 10:00 PM
+            </p>
+            <p className='text-neutral-400'>
+              Friday - Saturday: 5:00 PM - 11:00 PM
+            </p>
+            <p className='text-neutral-400'>
+              Sunday: 4:00 PM - 9:00 PM
+            </p>
+            <p className='text-neutral-400'>
+              Monday: Closed
             </p>
           </div>
         </div>  
