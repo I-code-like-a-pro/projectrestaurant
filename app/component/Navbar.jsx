@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gradient-br from-bg-dark-bg to-bg-transparent border-b border-border-dark h-20 flex items-center px-6">
+    <nav className="bg-gradient-to-br from-dark-bg to-transparent border-b border-border-dark h-20 flex items-center px-6">
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
         {/* Logo Section */}
         <div className="flex items-center gap-3">
@@ -22,7 +22,9 @@ const Navbar = () => {
             <ChefHat className="w-6 h-6 text-dark-bg" />
           </div>
           <div>
-            <div className="text-xl text-text-primary font-serif">Maison Étoile</div>
+            <div className="text-xl text-text-primary font-serif">
+              Maison Étoile
+            </div>
             <div className="text-xs text-gold tracking-widest">FINE DINING</div>
           </div>
         </div>
@@ -35,13 +37,15 @@ const Navbar = () => {
               <Link
                 key={navlink.path}
                 href={navlink.path}
-                className={`relative pb-2 inline-block transition-colors ${isActive
+                className={`relative pb-2 inline-block transition-colors ${
+                  isActive
                     ? "text-gold"
                     : "text-text-secondary hover:text-text-primary"
-                  } after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gold after:transition-transform after:duration-300 ${isActive
+                } after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gold after:transition-transform after:duration-300 ${
+                  isActive
                     ? "after:scale-x-100"
                     : "after:scale-x-0 hover:after:scale-x-100"
-                  }`}
+                }`}
               >
                 {navlink.label}
               </Link>
