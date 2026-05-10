@@ -20,6 +20,7 @@ const dish = {
     { name: "region", title: "region", type: "string" },
     { name: "category", title: "category", type: "string" },
     { name: "featured", title: "Featured", type: "boolean" },
+    { name: "imagelink", title: "link of the image", type: "string" },
   ],
 };
 export default dish;

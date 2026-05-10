@@ -32,5 +32,6 @@ export const Dish_Query = defineQuery(
     price,
     featured,
     region,
+    imagelink
   }`,
 );

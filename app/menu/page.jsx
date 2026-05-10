@@ -57,8 +57,6 @@ export default async function Page() {
         price: menu.price,
       })),
   };
-  console.log("All menus:", menus);
-  console.log("Appetizers found:", menuItems.appetizers);
 
   return (
     <main className="container mx-auto grid grid-cols-1 gap-6 p-12">
